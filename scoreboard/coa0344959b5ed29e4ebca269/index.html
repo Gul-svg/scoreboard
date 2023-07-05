@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-container">
+                <h3 id="home-team-title">HOME</h3>
+                <div class="score">
+                    <h4 id="inc-home-el">18</h4>
+                </div>
+                <div class="score-buttons">
+                <button class="score-button" onclick="incHomeHandle(1)">
+                    +1
+                </button>
+                <button class="score-button" onclick="incHomeHandle(2)">
+                   +2
+                </button>
+                <button class="score-button" onclick="incHomeHandle(3)">
+                    +3
+                </button>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="score-container">
+                <h3 id="guest-team-title">GUEST</h3>
+                
+                <div class="score">
+                    <h4 id="inc-guest-el">10</h4>
+                </div>
+                
+                <div class="score-buttons">
+               <button class="score-button" onclick="incGuestHandle(1)">
+                    +1
+                </button>
+                <button class="score-button" onclick="incGuestHandle(2)">
+                   +2
+                </button>
+                <button class="score-button" onclick="incGuestHandle(3)">
+                    +3
+                </button>
+                </div>
+            </div>
+            
+        </div>
+        <button onclick="reset()">Reset</button>
+        <script src="index.js"></script>
+    </body>
+</html>
